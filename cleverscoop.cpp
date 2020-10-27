@@ -17,7 +17,7 @@ int main()
     cin >> a[i];
     mx = max(mx, a[i]);
     }
-    ll temp[1005]={0};
+    ll temp[100005]={0};
   for(int i=0; i<n; i++)
     {    temp[a[i]]++;
     }
@@ -27,9 +27,9 @@ int main()
     //   cout << temp[a[i]] << " ";
 // }
     // cout << endl;
-    ll a1 = 0, a2 = 0;    for(ll i=1; i<=1000; i++)
+    ll a1 = 0, a2 = 0;    for(ll i=1; i<=100003; i++)
     {
-        for(ll j=i; j<=1000; j+=i)
+        for(ll j=i; j<=100003; j+=i)
         {
             if(i==j)
             {
@@ -41,9 +41,9 @@ int main()
             }
         }
     }
-    for(ll i=1; i<=1000; i++)
+    for(ll i=1; i<=100003; i++)
     {
-        for(ll j=i; j<=1000; j+=i)
+        for(ll j=i; j<=100003; j+=i)
         {
             if(i==j)
             {

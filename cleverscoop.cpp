@@ -23,15 +23,11 @@ int main()
       temp[a[i]]++;
     }
     ll ans = 0;
-    ll a1 = 0, a2 = 0;    
+    ll a1 = 0, a2 = 0;   
     for(ll i=1; i<=100003; i++)
     {
         for(ll j=i; j<=100003; j+=i)
         {
-            if(i==j)
-            {
-              ans += ((temp[i]-1)*(temp[i]))/2;
-            }
             if(i!=j)
             {
               ans += temp[i]*temp[j];
